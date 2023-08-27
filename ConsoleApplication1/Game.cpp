@@ -29,7 +29,6 @@ void Game::start_game(std::string tiles, std::string background, RenderWindow& w
 	fill_sprites();
 	generate_field();
 	draw_field(window);
-	logic(window);
 }
 
 void Game::draw_field(RenderWindow& window)

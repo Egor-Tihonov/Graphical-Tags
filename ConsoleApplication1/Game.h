@@ -25,8 +25,8 @@ private:
 	void fill_sprites();
 
 public:
-	static int BLOCK_WIDTH;
-	static int LEFT_INDENT, TOP_INDENT;
+	int BLOCK_WIDTH;
+	int LEFT_INDENT, TOP_INDENT;
 
 	Game(int, int, int);
 
