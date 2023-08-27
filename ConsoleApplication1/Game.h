@@ -11,8 +11,6 @@ private:
 	static const int X = 4;
 	static const int Y = 4;
 	bool win;
-	int BLOCK_WIDTH;
-	int LEFT_INDENT, TOP_INDENT;
 
 	int correct_field[X][Y];
 	int game_field[X][Y];
@@ -27,9 +25,12 @@ private:
 	void fill_sprites();
 
 public:
+	static int BLOCK_WIDTH;
+	static int LEFT_INDENT, TOP_INDENT;
+
 	Game(int, int, int);
 
-	bool logic(RenderWindow&);
+	bool logic(int, int, RenderWindow&);
 	bool victory();
 
 	void start_game(std::string, std::string, RenderWindow&);
